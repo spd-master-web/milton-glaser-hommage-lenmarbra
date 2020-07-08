@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  background-color: #ACB1B9;
+  width: 100vp;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;;
+}
+#note{
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  z-index: 1;
+
+}
+#pin{
+  position: absolute;
+  top: -1em;
+  left: 0;
+  z-index: 2;
+}
+#bg{
+    z-index: -1;
+  }
+
+#stripes{
+  z-index: 0;
+  position: absolute;
+  top: -63em;
+  left: -50em;
+  right: -20em;
+}
+
