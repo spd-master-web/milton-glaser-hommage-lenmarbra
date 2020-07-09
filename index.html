@@ -384,7 +384,7 @@ tl.fromTo('#note', 2, {opacity:0}, {opacity:1});
 tl.staggerFrom('.letter', 0.3, {opacity:0}, 0.3);
 tl.fromTo('.mg', 2, {opacity:0, scaleX:0, scaleY:0, border: 0}, {opacity:1, scaleX:1, scaleY:1, border: 3, ease:Power1.easeIn, ease: "back"}, 5);
 tl.fromTo('#backgroundalttwo', 2.5, {opacity:0}, {opacity:1}, 7);
-tl.fromTo('.pins', 2, {rotation:0}, {rotation:360}, 7.2);
+tl.fromTo('.pins', 2, {rotation:0, transformOrigin:"50% 50%"}, {rotation:360, transformOrigin:"50% 50%"}, 7.2);
 tl.fromTo('#pin', 2, {left:-550, top:-550, opacity:0.7}, {left: 0,top: 0, opacity:1, ease:Power1.easeIn}, 7.5);
 tl.to('#note', 1, {rotation: 3}, 9.6);
 tl.to('body', 3, {backgroundColor: "#FF3F1B"}, 10);
@@ -394,7 +394,7 @@ tl.to('#Path_693', 2, {fill: "#FFA729"}, 13.5)
 tl.fromTo('#pin', 3, {opacity:0.8}, {opacity:1}, 13.5);
 tl.fromTo('#stripes', 3, {opacity:0}, {opacity:1}, 17);
 tl.fromTo('#pin', 2, {opacity:1}, {opacity:0}, 17);
-tl.fromTo('#stripes', 4, {rotation:0}, {rotation:-180}, 19);
+tl.to('#stripes', 4, {rotation:-180}, 19);
 tl.to('#note', 1, {rotation: 0}, 21);
 
 
